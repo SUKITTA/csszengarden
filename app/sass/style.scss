@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
+
+// _base.scss
+$font-stack:    'Zen Loop', cursive;;
+$primary-color: indigo;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
