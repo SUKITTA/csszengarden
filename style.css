@@ -1,9 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Yomogi&display=swap");
+a::before {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #CEE5D0;
+  font-weight: 900;
+  font-size: 1.17em;
+}
+
 body {
   color: #5E454B;
   background-color: #D8B384;
+}
+body footer {
+  flex-direction: column;
+  background-color: #5E454B;
+  padding: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+body h1 {
+  font: 80px "Staatliches", cursive;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+body h2 {
+  font: 32px "Staatliches", cursive;
+  margin-top: 0;
+  opacity: 0.6;
+}
+body h3 {
+  font: 46px "Staatliches", cursive;
+  padding: 32px 0 0 32px;
+  opacity: 0.8;
+}
+body p {
+  font-size: 20px;
+  padding-block: 8px;
+  padding-inline: 32px;
 }
 body .page-wrapper {
   position: relative;
@@ -16,15 +55,6 @@ body .page-wrapper .intro header {
   color: #D8B384;
   background-color: #5E454B;
   padding: 32px;
-}
-body .page-wrapper .intro h1 {
-  font: 80px "Staatliches", cursive;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-body .page-wrapper .intro h2 {
-  font: 32px "Staatliches", cursive;
-  margin-top: 0;
 }
 body .page-wrapper .intro .summary {
   width: 80%;
@@ -61,6 +91,7 @@ body .page-wrapper .sidebar .wrapper .design-selection li {
 body .page-wrapper .sidebar .wrapper .design-selection li .design-name {
   font: 100% "Staatliches", cursive;
   font-size: 24px;
+  opacity: 0.6;
   color: #5E454B;
   display: block;
   text-decoration: none;
@@ -102,17 +133,15 @@ body .page-wrapper .sidebar .wrapper .zen-resources {
   font: 100% "Barlow Condensed", sans-serif;
   order: 3;
 }
-body footer {
-  flex-direction: column;
+body .page-wrapper .sidebar .wrapper .zen-resources li {
+  font: 100% "Staatliches", cursive;
+  padding-bottom: 24px;
+  text-decoration: none;
+  opacity: 0.6;
 }
-body h3 {
-  font: 32px "Staatliches", cursive;
-  padding: 32px 0 0 32px;
-}
-body p {
-  font-size: 20px;
-  padding-block: 8px;
-  padding-inline: 32px;
+body .page-wrapper .sidebar .wrapper .zen-resources li a {
+  color: #5E454B;
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */

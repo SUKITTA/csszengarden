@@ -9,12 +9,59 @@ $brownie-color: #5E454B;
 $yellow-lava-color: #D8B384;
 $cream-color: #F3F0D7;
 $blue-pastel-color: #CEE5D0;
-// $html-icon: url(html.png);
+
+a::before {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: $blue-pastel-color;
+  font-weight: 900;
+  font-size: 1.17em;
+}
 
 body {
   
   color: $brownie-color;
   background-color: $yellow-lava-color;
+
+  footer {
+    flex-direction: column;
+    background-color: $brownie-color;
+    padding: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    // a {
+    //   padding: 16px;
+    // }
+  }
+
+  h1{
+    font: 80px $font-topic;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  h2 {
+    font: 32px $font-topic;
+    margin-top: 0;
+    opacity: 0.6
+  }
+
+  h3 {
+    font: 46px $font-topic;
+    padding: 32px 0 0 32px;
+    opacity: 0.8;
+  }
+
+  p {
+    font-size: 20px;
+    padding-block: 8px;
+    padding-inline: 32px;
+  }
 
   .page-wrapper {
     position: relative;
@@ -27,17 +74,6 @@ body {
         color: $yellow-lava-color;
         background-color: $brownie-color;
         padding: 32px
-      }
-      
-      h1{
-        font: 80px $font-topic;
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-      
-      h2 {
-        font: 32px $font-topic;
-        margin-top: 0;
       }
       
       .summary {
@@ -77,10 +113,12 @@ body {
             .design-name {
               font: 100% $font-topic;
               font-size: 24px;
+              opacity: 0.6;
               color: $brownie-color;
               display: block;
               text-decoration: none;
-            }
+              
+              }
             .designer-name {
               font: 100% $font-name;
               color: $brownie-color;
@@ -115,7 +153,6 @@ body {
           } 
           .viewall {
             order: 1;
-            // position: absolute;
           }
         }
 
@@ -123,27 +160,22 @@ body {
         .zen-resources {
           font: 100% $font-stack;
           order: 3;
+
+          li {
+            font: 100% $font-topic;
+            padding-bottom: 24px;
+            text-decoration: none;
+            opacity: 0.6;
+
+            a {
+              color: $brownie-color;
+              font-size: 24px;
+            }
+          }
         }
       }
       
     }
-  }
-
-  
-
-  footer {
-    flex-direction: column;
-  }
-
-  h3 {
-    font: 32px $font-topic;
-    padding: 32px 0 0 32px;
-  }
-
-  p {
-    font-size: 20px;
-    padding-block: 8px;
-    padding-inline: 32px;
   }
 }
 
