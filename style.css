@@ -1,7 +1,118 @@
-@import url("https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Yomogi&display=swap");
 body {
-  font: 100% "Zen Loop", cursive;
-  color: indigo;
+  color: #5E454B;
+  background-color: #D8B384;
+}
+body .page-wrapper {
+  position: relative;
+}
+body .page-wrapper .intro {
+  font: 100% "Barlow Condensed", sans-serif;
+  position: relative;
+}
+body .page-wrapper .intro header {
+  color: #D8B384;
+  background-color: #5E454B;
+  padding: 32px;
+}
+body .page-wrapper .intro h1 {
+  font: 80px "Staatliches", cursive;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+body .page-wrapper .intro h2 {
+  font: 32px "Staatliches", cursive;
+  margin-top: 0;
+}
+body .page-wrapper .intro .summary {
+  width: 80%;
+}
+body .page-wrapper .intro .preamble {
+  width: 80%;
+}
+body .page-wrapper .main {
+  width: 80%;
+  font: 100% "Barlow Condensed", sans-serif;
+}
+body .page-wrapper .sidebar {
+  grid-area: side-column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+}
+body .page-wrapper .sidebar li {
+  list-style-type: none;
+}
+body .page-wrapper .sidebar .wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #CEE5D0;
+}
+body .page-wrapper .sidebar .wrapper .design-selection {
+  order: 2;
+}
+body .page-wrapper .sidebar .wrapper .design-selection li {
+  font: 100% "Staatliches", cursive;
+  padding-bottom: 24px;
+}
+body .page-wrapper .sidebar .wrapper .design-selection li .design-name {
+  font: 100% "Staatliches", cursive;
+  font-size: 24px;
+  color: #5E454B;
+  display: block;
+  text-decoration: none;
+}
+body .page-wrapper .sidebar .wrapper .design-selection li .designer-name {
+  font: 100% "Yomogi", cursive;
+  color: #5E454B;
+  text-decoration: none;
+  padding-left: 8px;
+}
+body .page-wrapper .sidebar .wrapper .design-archives {
+  margin-top: 120px;
+  font: 100% "Staatliches", cursive;
+  order: 1;
+}
+body .page-wrapper .sidebar .wrapper .design-archives ul {
+  display: flex;
+  flex-direction: row;
+}
+body .page-wrapper .sidebar .wrapper .design-archives a {
+  font-size: 24px;
+  color: #F3F0D7;
+}
+body .page-wrapper .sidebar .wrapper .design-archives h3 {
+  display: none;
+}
+body .page-wrapper .sidebar .wrapper .design-archives .next {
+  order: 2;
+  visibility: hidden;
+}
+body .page-wrapper .sidebar .wrapper .design-archives .next::after {
+  content: ">";
+  visibility: visible;
+}
+body .page-wrapper .sidebar .wrapper .design-archives .viewall {
+  order: 1;
+}
+body .page-wrapper .sidebar .wrapper .zen-resources {
+  font: 100% "Barlow Condensed", sans-serif;
+  order: 3;
+}
+body footer {
+  flex-direction: column;
+}
+body h3 {
+  font: 32px "Staatliches", cursive;
+  padding: 32px 0 0 32px;
+}
+body p {
+  font-size: 20px;
+  padding-block: 8px;
+  padding-inline: 32px;
 }
 
 /*# sourceMappingURL=style.css.map */
